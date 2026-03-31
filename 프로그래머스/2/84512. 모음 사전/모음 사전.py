@@ -1,5 +1,3 @@
-from itertools import permutations
-
 def solution(word):
     alpha = ['A', 'E', 'I', 'O', 'U']
     answer = 0
@@ -11,7 +9,7 @@ def solution(word):
             return True
         
         if len(char) == 5:
-            return
+            return False
         
         for i in range(5):
             answer += 1

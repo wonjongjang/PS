@@ -1,0 +1,11 @@
+import math
+
+def solution(balls, share):
+    return math.factorial(balls) // (math.factorial(balls - share) * math.factorial(share))
+
+
+
+# from math import comb
+
+# def solution(balls, share):
+#     return comb(balls, share)
